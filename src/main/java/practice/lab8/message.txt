@@ -1,0 +1,9 @@
+457894974@qq.com
+11912725@mail.sustech.edu.cn
+Test sending email using JavaMail
+Dear all:
+
+This is a test of JavaMail usage.
+
+Best,
+zmt
