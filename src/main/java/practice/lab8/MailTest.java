@@ -9,8 +9,6 @@ import java.security.GeneralSecurityException;
 import java.util.*;
 import javax.mail.*;
 import javax.mail.internet.*;
-import javax.mail.internet.MimeMessage.RecipientType;
-
 
 public class MailTest
 {
@@ -41,9 +39,9 @@ public class MailTest
       Scanner scanner = new Scanner(System.in);
       String password = scanner.next();
 
-//      MailSSLSocketFactory sf = new MailSSLSocketFactory();
-//      sf.setTrustAllHosts(true);
-//      props.put("mail.smtp.ssl.socketFactory", sf);
+      MailSSLSocketFactory sf = new MailSSLSocketFactory();
+      sf.setTrustAllHosts(true);
+      props.put("mail.smtp.ssl.socketFactory", sf);
 
       Session mailSession = Session.getDefaultInstance(props, new Authenticator() {
          @Override

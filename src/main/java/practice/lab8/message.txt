@@ -1,4 +1,4 @@
-457894974@qq.com
+11912725@mail.sustech.edu.cn
 11912725@mail.sustech.edu.cn
 Test sending email using JavaMail
 Dear all:
